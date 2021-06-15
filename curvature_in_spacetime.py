@@ -15,9 +15,10 @@ if data == 1:
     c = 3 * math.pow(10, 8)
     m = float(input("\n enter the mass of blackhole in solar masses:"))
     radius = 2*m*G/(math.pow(c, 2))*2*math.pow(10,30)
-    print(radius)
+    print("radius = %d" %radius)
+
     volume = 4 / 3 * math.pi * math.pow(radius, 3)*pow(10,21)
-    print(volume)
+    print("volume = %d " %volume )
     sigma = (m * 2 *math.pow(10,30)/ (volume))
     n = int(sigma)
     R = radius
@@ -53,7 +54,9 @@ if data == 1:
 elif data == 2:
     m = float(input("\n Input the mass :"))
     radius = float(input("\n Input the radius:"))
+    print("radius = %d" % radius)
     volume = 4 / 3 * math.pi * math.pow(radius, 3)
+    print("volume = %d " % volume)
     sigma = m / volume
     n = int(sigma)
     R = radius
